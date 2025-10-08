@@ -4,9 +4,9 @@ services:
     container_name: aniworld-downloader
     build: .
     ports:
-      - "8080:8080"
+      - "8181:8080"
     volumes:
-      - ./downloads:/app/downloads
+      - /home/juryi/Media/jellyfinmedia/Anime/:/app/downloads
       - ./data:/app/data
     stdin_open: true
     tty: true
